@@ -1,4 +1,4 @@
-# miniLlama2
+# MiniLlama2
 
 The base structure of the project is picked from Carnegie Mellon University's [CS11-711 Advanced NLP](http://phontron.com/class/anlp2024/) assignment.
 Pretrained weights are loaded for the language model from stories42M.pt; an 8-layer, 42M parameter language model pretrained on the TinyStories dataset.
@@ -41,6 +41,7 @@ The project implements a small version of Llama2 model and performs sentence cla
 
    
 4. The table below shows the best sentiment classification accuracies for both the datasets.
+   
 
 | Dataset |       Fine-tuning               |                 LoRA             |
 |---------|-------------|---------|---------|--------------|---------|---------|
