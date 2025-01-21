@@ -43,12 +43,10 @@ The project implements a small version of Llama2 model and performs sentence cla
 4. The table below shows the best sentiment classification accuracies for both the datasets.
    
 
-| Dataset |       Fine-tuning               |                 LoRA             |
-|---------|-------------|---------|---------|--------------|---------|---------|
-|         | Train       | Dev     | Test    | Train        | Dev     | Test    |
-|---------|-------------|---------|---------|--------------|---------|---------|
-| sst     | 0.77        | 0.41    | 0.41    | 0.45         | 0.43    | 0.41    |
-| cfimdb  | 0.85        | 0.83    | 0.45    | 0.879        | 0.869   | 0.52    |
+| Dataset | Fine-tuning (Train/Dev/Test) | LoRA (Train/Dev/Test) |
+|---------|-------------------------------|-----------------------|
+| sst     | 0.77 / 0.41 / 0.41           | 0.45 / 0.43 / 0.41   |
+| cfimdb  | 0.85 / 0.83 / 0.45           | 0.879 / 0.869 / 0.52 |
 
 
 ### Acknowledgement
