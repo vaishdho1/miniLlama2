@@ -7,6 +7,7 @@
 ### Attention
 1. This class contains the implementation of multihead cross attention and is derived from the nn.Module class.
 2. The functions present in the class are as follows:
+   
     a. compute_query_key_value_scores : The function computes the attention scores and the scaled value vectors.
    
     b. forward : The forward function in nn.Module is overwritten wiht attention computation followed by dropout. 
@@ -17,17 +18,17 @@
 ### LlamaLayer
 1. This class contains the implementation of one transformer layer.
 
-  a. layer normalization of the input (via Root Mean Square layer normalization)
+    a. layer normalization of the input (via Root Mean Square layer normalization)
   
-  b. self-attention on the layer-normalized input
+    b. self-attention on the layer-normalized input
   
-  c. a residual connection 
+    c. a residual connection 
   
-  d. layer normalization on the output of the self-attention
+    d. layer normalization on the output of the self-attention
   
-  e. a feed-forward network on the layer-normalized output of the self-attention
+    e. a feed-forward network on the layer-normalized output of the self-attention
   
-  f. a residual connection from the unnormalized self-attention output added to the output of the feed-forward network
+    f. a residual connection from the unnormalized self-attention output added to the output of the feed-forward network
 
 ### Llama
 1. This class contains the implementation of the whole model. This is derived from LlamaPreTrainedModel
