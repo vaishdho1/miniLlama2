@@ -1,0 +1,15 @@
+The description of each of the output files generated is as follows:
+
+1. cfimdb-dev-finetuning-output.txt - Finetuned output of dev data on cfimdb dataset.
+2. cfimdb-test-finetuning-output.txt - Finetuned output of test data on cfimdb dataset.
+3. cfimdb-dev-prompting-output.txt - Zero Shot Prompting output of dev data on cfimdb dataset.
+4. cfimdb-test-prompting-output.txt - Zero Shot prompting output of test data on cfimdb dataset.
+5. generated-sentence-temp-0.txt -Text continuation output at temperature 0.0
+6. generated-sentence-temp-1.txt - Text continuation output at temperature 1.0
+7.sst-dev-finetuning-output-lora.txt - LoRA finetuned output of dev data on sst dataset.
+8.sst-dev-finetuning-output.txt - Finetuned output of dev data for sst dataset
+9. sst-dev-prompting-output.txt - Zero Shot Prompting output on dev data on sst dataset.
+10. sst-test-finetuning-output-lora.txt - LoRA finetuned output of test data on sst dataset.
+11. sst-test-finetuning-output.txt - Finetuned output of test data on sst dataset.
+12. sst-test-prompting-output.txt - Zero Shot Prompting output of test data on sst dataset.
+
