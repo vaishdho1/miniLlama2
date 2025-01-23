@@ -2,7 +2,7 @@
 
 The base structure of the project is picked from Carnegie Mellon University's [CS11-711 Advanced NLP](http://phontron.com/class/anlp2024/) assignment.
 Pretrained weights are loaded for the language model from stories42M.pt; an 8-layer, 42M parameter language model pretrained on the TinyStories dataset.
-The project implements a small version of Llama2 model and performs sentence classification on ``sst`` dataset and ``cfimdb``. The `documentation.md` file
+The project implements a small version of [Llama2](https://arxiv.org/pdf/2307.09288) model and performs sentence classification on ``sst`` dataset and ``cfimdb``. The `documentation.md` file
 contains descriptions of the classes and each function within them.
 
 ## Key features Implementd
