@@ -1,0 +1,23 @@
+The commands to test various features:
+
+1. Text Continuation
+
+`python run_llama.py --generate
+This generates sentence continuation with 2 different temperatures.
+
+2. Zero Shot Prompting for SST:
+
+`python run_llama.py --option prompt --batch_size 10  --train data/sst-train.txt --dev data/sst-dev.txt --test data/sst-test.txt --label-names data/sst-label-mapping.json --dev_out sst-dev-prompting-output.txt --test_out sst-test-prompting-output.txt [--use_gpu]
+
+3. Zero Shot Prompting for CDIMDB:
+`python run_llama.py --option prompt --batch_size 10  --train data/cfimdb-train.txt --dev data/cfimdb-dev.txt --test data/cfimdb-test.txt --label-names data/cfimdb-label-mapping.json --dev_out cfimdb-dev-prompting-output.txt --test_out cfimdb-test-prompting-output.txt [--use_gpu]
+
+4. Finetuning for SST:
+`python run_llama.py --option finetune --epochs 5 --lr 2e-5 --batch_size 80  --train data/sst-train.txt --dev data/sst-dev.txt --test data/sst-test.txt --label-names data/sst-label-mapping.json --dev_out sst-dev-finetuning-output.txt --test_out sst-test-finetuning-output.txt [--use_gpu]
+5. Finetuning for CFIMDB:
+`python run_llama.py --option finetune --epochs 5 --lr 2e-5 --batch_size 10  --train data/cfimdb-train.txt --dev data/cfimdb-dev.txt --test data/cfimdb-test.txt --label-names data/cfimdb-label-mapping.json --dev_out cfimdb-dev-finetuning-output.txt --test_out cfimdb-test-finetuning-output.txt [--use_gpu]
+6. LoRA Finetuning for SST:
+`python run_llama.py --option lora --rank 4 --epochs 5 --lr 2e-3 --batch_size 80 --train data/sst-train.txt --dev data/sst-dev.txt --test data/sst-test.txt --label-names data/sst-label-mapping.json --dev_out sst-dev-finetuning-output-lora.txt --test_out sst-test-finetuning-output-lora.txt --use_gpu
+7. LoRA Finetuning CFIMDB:
+`python run_llama.py --optio lora --rank 4 --epochs 5 -lr 2e-3 --batch_size 10 --train data/cfimdb-train.txt --dev data/cfimdb-dev.txt --test data/cfimdb-test.txt --label-names data/cfimdb-label-mapping.json --dev_out cfimdb-dev-finetuning-output-lora.txt --test_out cfimdb-test-finetuning-output-lora.txt [--use_gpu]
+
