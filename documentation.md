@@ -1,10 +1,10 @@
 ---
 ## llama.py
 ---
-### RMSNorm
+#### RMSNorm
 1. This class computes the Root Mean Square normalization
 
-### Attention
+#### Attention
 1. This class contains the implementation of multihead cross attention and is derived from the nn.Module class.
 2. The functions present in the class are as follows:
    
@@ -12,10 +12,10 @@
    
     b. forward : The forward function in nn.Module is overwritten wiht attention computation followed by dropout. 
 
-### FeedForward
+#### FeedForward
 1. This class contains a feed forward layer consisting of a combination of linear layers, SwiGLU activation and dropout
 
-### LlamaLayer
+#### LlamaLayer
 1. This class contains the implementation of one transformer layer.
 
     a. layer normalization of the input (via Root Mean Square layer normalization)
@@ -30,32 +30,32 @@
   
     f. a residual connection from the unnormalized self-attention output added to the output of the feed-forward network
 
-### Llama
+#### Llama
 1. This class contains the implementation of the whole model. This is derived from LlamaPreTrainedModel
 2. It contains intial configurations, layers and one complete forward pass through the model giving both the output before tranforming into
    vocabulary size and after transforming into it.
-### generate
+#### generate
 1. This function generated tokens given a prefix using temperature scaling and sampling from the scaled probability distribution.
 2. The function operates in inference mode.
 
-### load_pretrained
+#### load_pretrained
 1. This function loads the state of the current model from the checkpoint given.
 
 ---
 ## classifier.py
 ---
 
-### LlamaZeroShotClassifier
+#### LlamaZeroShotClassifier
 1. This class compute the completion probability of each label string using the output from the model.
 
-### LlamaEmbeddingClassifier
+#### LlamaEmbeddingClassifier
 1. This class adds an extra classifier head and computes the log-softmax over all the classes.
 
 ---
 ## optimizer.py
 ---
 
-### AdamW optimizer
+#### AdamW optimizer
 1. This class implements the AdamW optimizer from [Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101) with slight modifications.
 
 ---
@@ -67,10 +67,10 @@
 ## LoRA.py
 ---
 
-### LoRA_layer
+#### LoRA_layer
 1. This implements one layer of low rank adaptation for fine-tuning.
 
-### addLoraWrapper
+#### addLoraWrapper
 1. This converts the target modules specified into LoRA layers.
 
 ---
